@@ -6,14 +6,19 @@
 
 "use strict"
 
-// Function
-function temperatureCalculate() {
-  let temp = parseFloat(document.getElementById("fahrenheit").value);
+// Input
+function AreaandPerimeterCalculate() {
+  let radiusOfSemicircle = parseFloat(document.getElementById("radius").value);
   
- // Calculation
-  let celsius = 5 / 9 * (temp - 32);
-  let celsiusRounded = celsius.toFixed(1)
+  // Area calculation
+  let area = 1 / 2 * Math.PI * radiusOfSemicircle ** 2;
+  let areaRounded = area.toFixed(2)
 
-// Display results
-  document.getElementById("display-results").innerHTML = "The temperature in Celsius is " + celsiusRounded + " C°."
+  // Perimeter calculation
+  let diameter = radiusOfSemicircle * 2
+  let perimeter = Math.PI * radiusOfSemicircle + diameter
+  let perimeterRounded = perimeter.toFixed(2)
+  
+  // Output
+  document.getElementById("display-results").innerHTML = "The area of the semicircle is " + areaRounded + " cm <sup>2</sup>" + " and the perimeter is " + perimeterRounded + " cm."
 }
