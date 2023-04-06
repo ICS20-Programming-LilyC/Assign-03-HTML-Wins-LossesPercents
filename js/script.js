@@ -22,3 +22,7 @@ function AreaandPerimeterCalculate() {
   // Output
   document.getElementById("display-results").innerHTML = "The area of the semicircle is " + areaRounded + " cm <sup>2</sup>" + " and the perimeter is " + perimeterRounded + " cm."
 }
+
+function textfield () {
+  document.getElementById("textfield").innerHTML = "Thank you for your input and participation! I hope you found this webpage helpful :)"
+}
