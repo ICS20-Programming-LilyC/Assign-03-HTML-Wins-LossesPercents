@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-ca">
   <head>
-    
-    <!--Metadata-->
+
+    <!--Meta data-->
     <meta charset="utf-8">
     <meta name="description" content="Area and Preimeter of a Semicircle Webpage">
     <meta name="keywords" content="immaculata, ics2o">
     <meta name="author" content="Lily Carroll">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="./fav_index1/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./fav_index1/favicon-32x32.png">
@@ -21,7 +21,6 @@
     <!--MDL button-->
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-blue.min.css" /> 
 
-
     <!--Title-->
     <title>Calculating the Area and Perimeter of a Semicircle</title>
   </head>
@@ -30,49 +29,49 @@
     <!--Link to JS file-->
     <script src="./js/script.js"></script>
 
+    <!--Padding-->
     <main style="padding-left: 20px; padding-right: 20px;">
 
-      <!--Header and text-->
+    <!--Header and text-->
       <h1>Calculating the Area and Perimeter of a Semicircle in Javascript</h1>
       <p>Welcome! This webpage calculates the area and perimeter of a semicircle. If you're unsure on how to calculate the area or perimeter of a semicircle, then you can just enter your values below and my webpage will calculate it for you! In the image below you can also see the formula for this calculation. </p>
       <br>
-  
-      <!--Image-->
+
+    <!--Image-->
       <center>
         <img src="./images/semicircleAreaPreimeterFormula.png" alt="Formula for the area and perimeter of semicircle" width="300" length="300">
       </center>
-      
-      <!--User input form-->
+
+    <!--User input form-->
       <h3>Please enter your input below:</h3>
       <form action="javascript:AreaandPerimeterCalculate()">
         <label for="radius">Radius:</label>
         <input type="number" step="0.01" min="1" id="radius" placeholder="Input your radius here..."
-        <br>
-        <br>
-        <br>
+      <br>
+      <br>
         <input type="submit" value="Calculate" button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
       </form>
-          <br>
-  
-      <!--Display results-->
+      <br>
+
+    <!--Display results-->
       <div id="display-results">
       </div>
-      
-      <!--Question for user-->
+
+    <!--Question for user-->
       <center>
         <h4>What objects can be found naturally in the shape of a semicircle?</h4>
-      
-      <!--Textfield with Floating Label-->
-      <form action="#">
-        <div onchange="textfield()" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" id="sample3">
-          <label class="mdl-textfield__label" for="sample3"></label>
-        </div>
-      </form>
+
+    <!--Textfield with Floating Label-->
+        <form action="#">
+          <div onchange="textfield()" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3">
+            <label class="mdl-textfield__label" for="sample3"></label>
+          </div>
+        </form>
         <br>
         <br>
 
-        <!--Display pop-up-->
+    <!--Display pop-up-->
         <div id="textfield"></div>
       </center>
     </main>
