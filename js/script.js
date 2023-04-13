@@ -6,7 +6,7 @@
 
 "use strict"
 
-// Input
+// User input of raduis
 function AreaandPerimeterCalculate() {
   let radiusOfSemicircle = parseFloat(document.getElementById("radius").value);
   
@@ -19,10 +19,11 @@ function AreaandPerimeterCalculate() {
   let perimeter = Math.PI * radiusOfSemicircle + diameter
   let perimeterRounded = perimeter.toFixed(2)
   
-  // Output
+  // User output of area and perimeter
   document.getElementById("display-results").innerHTML = "The area of the semicircle is " + areaRounded + " cm <sup>2</sup>" + " and the perimeter is " + perimeterRounded + " cm."
 }
 
+  // Appreciation message
 function textfield () {
   document.getElementById("textfield").innerHTML = "Thank you for your input and participation! I hope you found this webpage helpful :)"
 }
