@@ -6,7 +6,7 @@
 
 "use strict"
 
-// User input of raduis
+// User input of radius
 function AreaandPerimeterCalculate() {
   let radiusOfSemicircle = parseFloat(document.getElementById("radius").value);
   
